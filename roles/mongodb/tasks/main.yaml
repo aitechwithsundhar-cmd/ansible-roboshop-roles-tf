@@ -1,0 +1,22 @@
+
+    - name: Copy MongoDB repo file
+      copy:
+        src: mongo.repo
+        dest: /etc/yum.repos.d/mongo.repo
+
+    - name: Install MongoDB
+      yum:
+        name: mongodb-org
+        state: installed
+
+    - name: Enable MongoDB visibility
+      replace:
+        path: /etc/mongod.conf
+        regexp: '127.0.0.1'
+        replace: '0.0.0.0'
+
+    - name: Start MongoDB
+      systemd:
+        name: mongod
+        state: started
+        enabled: staryed
