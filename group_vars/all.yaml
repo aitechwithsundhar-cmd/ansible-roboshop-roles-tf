@@ -1,12 +1,13 @@
 ansible_user: ec2-user
 ansible_password: DevOps321
 
+MONGO_HOST: "mongodb-{{ env }}.techdaws.online"
 MONGODB_HOST: "mongodb-{{ env }}.techdaws.online"
 REDIS_HOST: "redis-{{ env }}.techdaws.online"
 MYSQL_HOST: "mysql-{{ env }}.techdaws.online"
 RABBITMQ_HOST: "rabbitmq-{{ env }}.techdaws.online"
 CATALOGUE_HOST: "catalogue.backend-alb-{{ env }}.techdaws.online"
-USER_HOST: "user.backend-abl-{{ env }}.techdaws.online"
+USER_HOST: "user.backend-alb-{{ env }}.techdaws.online"
 CART_HOST: "cart.backend-alb-{{ env }}.techdaws.online"
 SHIPPING_HOST: "shipping.backend-alb-{{ env }}.techdaws.online"
 PAYMENT_HOST: "payment.backend-alb-{{ env }}.techdaws.online"
