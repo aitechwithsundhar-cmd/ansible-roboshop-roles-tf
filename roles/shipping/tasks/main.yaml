@@ -19,9 +19,11 @@
     name: "{{ item }}"
     executable: pip3.9
   loop:
-  - cryptography
-  - PyMySQL
-  
+    - cryptography
+    - PyMySQL
+    - boto3
+    - botocore
+    
 - name: import shipping database schema
   community.mysql.mysql_db:
     state: import
