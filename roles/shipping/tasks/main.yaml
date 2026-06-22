@@ -36,6 +36,7 @@
     - /app/db/schema.sql
     - /app/db/app-user.sql
     - /app/db/master-data.sql
+  when: false
 
 - name: start and enable shipping service
   ansible.builtin.service:
