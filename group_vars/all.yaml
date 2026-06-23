@@ -6,9 +6,11 @@ MONGODB_HOST: "mongodb-{{ env }}.techdaws.online"
 REDIS_HOST: "redis-{{ env }}.techdaws.online"
 MYSQL_HOST: "mysql-{{ env }}.techdaws.online"
 RABBITMQ_HOST: "rabbitmq-{{ env }}.techdaws.online"
-CATALOGUE_HOST: "catalogue.backend-alb-{{ env }}.techdaws.online"
-USER_HOST: "user.backend-alb-{{ env }}.techdaws.online"
-CART_HOST: "cart.backend-alb-{{ env }}.techdaws.online"
-SHIPPING_HOST: "shipping.backend-alb-{{ env }}.techdaws.online"
-PAYMENT_HOST: "payment.backend-alb-{{ env }}.techdaws.online"
+
+CATALOGUE_HOST: "catalogue.backend-{{ env }}.techdaws.online"
+USER_HOST: "user.backend-{{ env }}.techdaws.online"
+CART_HOST: "cart.backend-{{ env }}.techdaws.online"
+SHIPPING_HOST: "shipping.backend-{{ env }}.techdaws.online"
+PAYMENT_HOST: "payment.backend-{{ env }}.techdaws.online"
+
 app_version: v3
